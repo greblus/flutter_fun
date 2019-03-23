@@ -58,8 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     } else {
                       addr = "http://" + v;
                       tecontr.text = addr;
-                      wvcontr.loadUrl(addr);
                     }
+                    wvcontr.loadUrl(addr);
                   }),
             ),
           ),

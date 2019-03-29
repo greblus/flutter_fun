@@ -6,7 +6,7 @@ main() async {
   //print(syncFibonacci(20));
 
   // Compute and print a fiboacci sequence on another thread (isolate).
-  for (var i = 0; i<=100; i++) {
+  for (var i = 0; i<=45; i++) {
   	print("$i ${await asyncFibonacci(i)}");
   }
 }

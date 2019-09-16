@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
+import 'package:android_alarm_manager/android_alarm_manager.dart';
 
-void main() => runApp(MyApp());
+void main() async { 
+  await AndroidAlarmManager.initialize();  
+  runApp(MyApp()); 
+  }
 
 class MyApp extends StatelessWidget {
   @override
@@ -39,46 +43,40 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _decrementTimer() {
-    setState(() {
-      _seconds -= 1;
-      if (_seconds == 0) {
-        _seconds = 60;
-        _minutes -= 1;
-      }
-    });
+    if (_minutes < 1) {
+      AndroidAlarmManager.cancel(1);
+      setState(() {
+        _seconds -= 1;
+        if (_seconds == 0) {
+          _seconds = 60;
+          _minutes -= 1;
+        }
+      });
+    }
   }
 
   void _fromSlider(double v) {
     setState(() {   
       _minutes = (v ~/ 5) * 5.0;
       _seconds = 60;
-      _timer?.cancel();
+      AndroidAlarmManager.cancel(1);
     });
   }
-
-  Timer _timer;
+  
   void _startTimer() async {
-    _timer?.cancel();
-    const oneSec = const Duration(seconds: 1);
-    _timer = new Timer.periodic(
-        oneSec,
-        (Timer timer) => setState(() {
-              if (_minutes < 1) {
-                timer.cancel();
-              } else {
-                _decrementTimer();
-              }
-            }));
+    AndroidAlarmManager.cancel(1);
+    await AndroidAlarmManager.periodic(const Duration(seconds: 1), 1, 
+      _decrementTimer, wakeup: true);
+    
     try {
       await http
           .get("http://10.0.1.60:8000/sleep=" + _minutes.toInt().toString());
-    } catch (e) {}
-    ;
+    } catch (e) {}    
   }
 
   void _check_delta(d) {
     setState(() {
-      _timer?.cancel();
+      AndroidAlarmManager.cancel(1);
       if (d.delta.dy > 1.5 || d.delta.dx < -1.5) _minutes -= 5;
       if (d.delta.dy < -1.5 || d.delta.dx > 1.5) _minutes += 5;
       if (_minutes < 0) _minutes = 0;
@@ -161,3 +159,4 @@ class _MyHomePageState extends State<MyHomePage> {
         ));
   }
 }
+

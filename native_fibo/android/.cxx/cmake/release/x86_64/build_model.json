@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/android",
+      "sdkFolder": "/home/greblus/Android/Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates",
+      "gradleModulePathName": ":native_fibo",
+      "moduleRootFolder": "/home/greblus/repos/flutter_fun/native_fibo/android",
+      "makeFile": "/home/greblus/repos/flutter_fun/native_fibo/android/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/android/.cxx",
+      "cxxFolder": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx",
+      "ndkFolder": "/home/greblus/Android/Sdk/ndk/20.0.5594570",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/lib",
+    "objFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj",
+    "jsonFolder": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64",
+  "jsonFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64",
+  "objFolder": "/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj/x86_64",
+  "buildCommandFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/build_command.txt",
+  "buildOutputFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/build_output.txt",
+  "modelOutputFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/CMakeLists.txt",
+    "toolchainWrapperFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/build_generation_state.json",
+    "cacheKeyFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/compiler_cache_key.json",
+    "compilerCacheUseFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cxx/release/x86_64/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86_64/compile_commands.json"
+}

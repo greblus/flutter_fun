@@ -1,0 +1,5 @@
+# ninja log v5
+3	406	0	CMakeFiles/native_fibo.dir/home/greblus/repos/flutter_fun/native_fibo/ios/Classes/native_fibo.cpp.o	a2640795a6cf8338
+406	866	0	/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj/x86_64/libnative_fibo.so	4f930d09edbcec75
+8	420	0	CMakeFiles/native_fibo.dir/home/greblus/repos/flutter_fun/native_fibo/ios/Classes/native_fibo.cpp.o	a2640795a6cf8338
+420	830	0	/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj/x86_64/libnative_fibo.so	4f930d09edbcec75

@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/home/greblus/repos/flutter_fun/native_fibo/android/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/greblus/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native_fibo-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native_fibo",
+			"buildCommand" : "/home/greblus/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86 --target native_fibo",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=/home/greblus/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/greblus/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dnative_fibo_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/greblus/repos/flutter_fun/native_fibo/ios/Classes/native_fibo.cpp",
+					"workingDirectory" : "/home/greblus/repos/flutter_fun/native_fibo/android/.cxx/cmake/release/x86"
+				}
+			],
+			"output" : "/home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj/x86/libnative_fibo.so",
+			"toolchain" : "10002764349494693368"
+		}
+	},
+	"toolchains" : 
+	{
+		"10002764349494693368" : 
+		{
+			"cCompilerExecutable" : "/home/greblus/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/greblus/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

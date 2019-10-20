@@ -1,0 +1,2 @@
+[1/2] Building CXX object CMakeFiles/native_fibo.dir/home/greblus/repos/flutter_fun/native_fibo/ios/Classes/native_fibo.cpp.o
+[2/2] Linking CXX shared library /home/greblus/repos/flutter_fun/native_fibo/example/build/native_fibo/intermediates/cmake/release/obj/x86_64/libnative_fibo.so
